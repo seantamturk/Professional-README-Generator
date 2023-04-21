@@ -80,7 +80,7 @@ function renderLicenseSection(license) {
 
 //Markdown generator
 function generateMarkdown(data) {
-  // const projectLink creates a working link that replaces spaces in the project name with dashes
+  // const projectNameDashed replaces spaces in the project name with dashes so it can be plugged into the repo link
   const projectNameDashed = `${data.projectName.replace(/\s+/g, '-')}`;
   const licenseSection = renderLicenseSection(data.license);
   return `# ${data.projectName}
