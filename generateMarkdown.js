@@ -1,6 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-// make if statement to check what license we picked and return approipriate badge
+// takes license chosen in inquirer and chooses appropriate badge
+//note that the license is clickable in the readme. directs to license info
 function renderLicenseBadge(license) {
   let badge = '';
   if (license === 'MIT License') {
@@ -35,20 +34,55 @@ function renderLicenseBadge(license) {
   }
   return badge;
 }
+// selects appropriate info based on license chosen
+function renderLicenseSection(license) {
+  let licenseText = '';
 
+  // Add license information based on the chosen license
+  switch (license) {
+    case 'MIT License':
+      licenseText = `This project is licensed under the MIT License. For more information about the license, see the [MIT License](https://opensource.org/licenses/MIT).`;
+      break;
+    case 'Apache License 2.0':
+      licenseText = `This project is licensed under the Apache License 2.0. For more information about the license, see the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0).`;
+      break;
+    case 'GNU General Public License v3.0':
+      licenseText = `This project is licensed under the GNU General Public License v3.0. For more information about the license, see the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).`;
+      break;
+    case 'BSD 3-Clause License':
+      licenseText = `This project is licensed under the BSD 3-Clause License. For more information about the license, see the [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause).`;
+      break;
+    case 'Mozilla Public License 2.0':
+      licenseText = `This project is licensed under the Mozilla Public License 2.0. For more information about the license, see the [Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0).`;
+      break;
+    case 'The Unlicense':
+      licenseText = `This project is licensed under the Unlicense. For more information about the license, see the [Unlicense](http://unlicense.org/).`;
+      break;
+    case 'GNU Lesser General Public License v3.0':
+      licenseText = `This project is licensed under the GNU Lesser General Public License v3.0. For more information about the license, see the [GNU Lesser General Public License v3.0](https://www.gnu.org/licenses/lgpl-3.0.en.html).`;
+      break;
+    case 'GNU Affero General Public License v3.0':
+      licenseText = `This project is licensed under the GNU Affero General Public License v3.0. For more information about the license, see the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).`;
+      break;
+    case 'Eclipse Public License 2.0':
+      licenseText = `This project is licensed under the Eclipse Public License 2.0. For more information about the license, see the [Eclipse Public License 2.0](https://opensource.org/licenses/EPL-2.0).`;
+      break;
+    case 'None':
+      licenseText = 'This project is not licensed.';
+      break;
+    default:
+      break;
+  }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) { }
+  return licenseText;
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) { }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   // const projectLink creates a working link that replaces spaces in the project name with dashes
   const projectNameDashed = `${data.projectName.replace(/\s+/g, '-')}`;
+  const licenseSection = renderLicenseSection(data.license);
   return `# ${data.projectName}
 ${renderLicenseBadge(data.license)}
 ## Description
@@ -61,6 +95,8 @@ ${data.usageInformation}
 ${data.contributingGuidelines}
 ## Test instructions
 ${data.testInstructions}
+## License
+${licenseSection}
 ## Questions
 - [Repository](https://github.com/${data.userName}/${projectNameDashed})
 - [Website](https://${data.userName}.github.io/${projectNameDashed}/)

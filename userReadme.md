@@ -1,16 +1,18 @@
-# test name hahaha
-[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+# test name
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-wdadwaadw
+sfedsfdsdf
 ## Installation instructions
-wawaddwa
+sdffsdfsd
 ## Usage information
-waddwaadw
+sdfsdfsdf
 ## Contributing guidelines
-awddadwa
+sdffsd
 ## Test instructions
-wdawaddwa
+sdfsdf
+## License
+This project is licensed under the MIT License. For more information about the license, see the [MIT License](https://opensource.org/licenses/MIT).
 ## Questions
-- [Repository](https://github.com/waddwawad/test-name-hahaha)
-- [Website](https://waddwawad.github.io/test-name-hahaha/)
-- [Email](mailto:waddwadwawad)
+- [Repository](https://github.com/sdfsdf/test-name)
+- [Website](https://sdfsdf.github.io/test-name/)
+- [Email](mailto:sdffsd)

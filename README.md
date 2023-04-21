@@ -1,5 +1,5 @@
 # Professional README Generator
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description 
 
 This is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. It prompts the user to input information about their application repository, and generates a high-quality, professional README file with the title of the project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
