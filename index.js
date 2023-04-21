@@ -30,7 +30,7 @@ inquirer
             type: 'list',
             message: 'License',
             name: 'license',
-            choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License v3.0', 'BSD 3-Clause License', 'Mozilla Public License 2.0', 'The Unlicense', 'GNU Lesser General Public License v3.0', 'GNU Affero General Public License v3.0', 'Eclipse Public License 2.0', 'GNU General Public License v2.0']
+            choices: ['None', 'MIT License', 'Apache License 2.0', 'GNU General Public License v3.0', 'BSD 3-Clause License', 'Mozilla Public License 2.0', 'The Unlicense', 'GNU Lesser General Public License v3.0', 'GNU Affero General Public License v3.0', 'Eclipse Public License 2.0', 'GNU General Public License v2.0']
         },
         {
             type: 'input',
