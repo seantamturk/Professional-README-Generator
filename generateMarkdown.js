@@ -15,7 +15,7 @@ function renderLicenseSection(license) { }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   // const projectLink creates a working link that replaces spaces in the project name with dashes
-  const projectLink = `https://github.com/${data.userName}/${data.projectName.replace(/\s+/g, '-')}`;
+  const projectNameDashed = `${data.projectName.replace(/\s+/g, '-')}`;
   return `# ${data.projectName}
 ${renderLicenseBadge(data.license)}
 ## Description
@@ -28,11 +28,10 @@ ${data.usageInformation}
 ${data.contributingGuidelines}
 ## Test instructions
 ${data.testInstructions}
-## Links
-- [Repository](${projectLink})
-- [Website](https://seantamturk.github.io/Work-Day-Scheduler/)
-- [Linkedin](https://www.linkedin.com/in/sean-tamturk-8253b722a/)
-- [Site Image](./images/websiteimage.png)
+## Questions
+- [Repository](https://github.com/${data.userName}/${projectNameDashed})
+- [Website](https://${data.userName}.github.io/${projectNameDashed}/)
+- [Email](mailto:${data.email})
 `;
 }
 

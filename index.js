@@ -47,6 +47,11 @@ inquirer
             message: 'Github username',
             name: 'userName',
         },
+        {
+            type: 'input',
+            message: 'Email',
+            name: 'email',
+        },
         // Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
     ])
     .then((response) => {

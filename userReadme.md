@@ -1,17 +1,17 @@
-# test name
+# work day scheduler
 undefined
 ## Description
-gsdfgfsdgdfsdfg
+werweffwe
 ## Installation instructions
-dfgdfgfgdfg
+weffwefwe
 ## Usage information
-dfggdfdfggdf
+wefwefwef
 ## Contributing guidelines
-fgdgfdgdfgdfdfg
+wefwefwef
 ## Test instructions
-dfggdfdfggdf
+wefwefwef
 ## Links
-- [Repository](https://github.com/seantamturk/test-name)
+- [Repository](https://github.com/seantamturk/work-day-scheduler)
 - [Website](https://seantamturk.github.io/Work-Day-Scheduler/)
 - [Linkedin](https://www.linkedin.com/in/sean-tamturk-8253b722a/)
 - [Site Image](./images/websiteimage.png)
