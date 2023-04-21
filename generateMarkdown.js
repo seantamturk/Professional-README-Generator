@@ -34,7 +34,7 @@ function renderLicenseBadge(license) {
   }
   return badge;
 }
-// selects appropriate info based on license chosen
+
 function renderLicenseSection(license) {
   let licenseText = '';
 
@@ -78,29 +78,45 @@ function renderLicenseSection(license) {
 }
 
 
-// TODO: Create a function to generate markdown for README
+//Markdown generator
 function generateMarkdown(data) {
   // const projectLink creates a working link that replaces spaces in the project name with dashes
   const projectNameDashed = `${data.projectName.replace(/\s+/g, '-')}`;
   const licenseSection = renderLicenseSection(data.license);
   return `# ${data.projectName}
 ${renderLicenseBadge(data.license)}
+
 ## Description
 ${data.description}
+
+## Table of Contents
+- [Installation instructions](#installation-instructions)
+- [Usage information](#usage-information)
+- [Contributing guidelines](#contributing-guidelines)
+- [Test instructions](#test-instructions)
+- [License](#license)
+- [Questions](#questions)
+
 ## Installation instructions
 ${data.installationInstructions}
+
 ## Usage information
 ${data.usageInformation}
+
 ## Contributing guidelines
 ${data.contributingGuidelines}
+
 ## Test instructions
 ${data.testInstructions}
+
 ## License
 ${licenseSection}
+
 ## Questions
+- [Github user ${data.userName}](https://github.com/${data.userName})
 - [Repository](https://github.com/${data.userName}/${projectNameDashed})
 - [Website](https://${data.userName}.github.io/${projectNameDashed}/)
-- [Email](mailto:${data.email})
+- [Contact me through email here](mailto:${data.email})
 `;
 }
 

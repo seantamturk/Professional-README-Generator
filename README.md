@@ -1,40 +1,55 @@
 # Professional README Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## Description 
+## Description
 
-This is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. It prompts the user to input information about their application repository, and generates a high-quality, professional README file with the title of the project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
+This is a command-line application that generates a high-quality, professional README file for a new project. The README file includes sections for Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions, making it easy for other developers to understand what the project is about, how to use it, how to contribute, and how to report issues.
 
-As a web developer, this application simplifies the process of creating a high-quality, professional README file for new projects, allowing me to focus more on the actual development work.
+As a developing web coder, the README Generator project was important for me to create because it allowed me to practice my command-line skills and develop a tool that can be useful for other developers. By completing this project, I gained practical experience with command-line applications, Node.js, and Markdown formatting, which are all important skills for a web developer to have.
 
 ## Acceptance Criteria
 
-- The application should prompt the user to input information about their application repository.
-- The generated README file should have a title matching the user's input.
-- The generated README file should have sections for Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions, with the appropriate information provided by the user.
-- The application should provide a list of options for the license, and add a badge for that license near the top of the README with a notice added to the License section that explains which license the application is covered under.
-- The Questions section should include the user's GitHub username with a link to their GitHub profile and their email address with instructions on how to reach them with additional questions.
-- The Table of Contents links should take the user to the corresponding section of the README.
+GIVEN a command-line application that accepts user input
+WHEN I am prompted for information about my application repository
+THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+WHEN I enter my project title
+THEN this is displayed as the title of the README
+WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+WHEN I choose a license for my application from a list of options
+THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+WHEN I enter my GitHub username
+THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+WHEN I enter my email address
+THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+WHEN I click on the links in the Table of Contents
+THEN I am taken to the corresponding section of the README
 
 ## Functionality
 
 The Professional README Generator allows users to:
 
-- Input information about their application repository, including the project name, description, installation instructions, usage information, contribution guidelines, and test instructions.
-- Choose a license from a list of options.
-- Generate a professional README file with a title, description, table of contents, installation instructions, usage information, license, contributing guidelines, test instructions, and contact information.
+- Enter the project title, description, installation instructions, usage information, contribution guidelines, test instructions, license, GitHub username, and email address
+- Choose from a list of license options and have a badge added to the top of the README and license information added to the License section
+- View the README file with sections for Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+- Click on links in the Table of Contents to navigate to the corresponding section
 
 ## Technologies Used
 
+- JavaScript
 - Node.js
-- Inquirer package
+- Inquirer
+- fs
 
 ## Getting Started
 
-To get started with the Professional README Generator, first make sure that you have Node.js installed on your computer. Then, clone the repository and navigate to the root directory in your command line. Run the command 'node index.js' to launch the application. Follow the prompts to input the necessary information and generate a professional README file for your project.
+To get started with the Professional README Generator, first install Node.js on your computer if it is not already installed. Then, clone the repository and navigate to the root directory in your terminal. Run the command "npm install" to install the necessary dependencies. Finally, run the command "node index.js" to start the application. Answer the prompts to generate your high-quality README file.
 
 ## License
 
-MIT License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). 
 
 ## Links
 
+- [Repository](https://github.com/seantamturk/Professional-README-Generator)
+- [Linkedin](https://www.linkedin.com/in/sean-tamturk-8253b722a/)
+- [Example Image](./assets/images/exampleimage.png)

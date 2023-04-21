@@ -1,18 +1,34 @@
 # test name
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 ## Description
-sfedsfdsdf
+test description
+
+## Table of Contents
+- [Installation instructions](#installation-instructions)
+- [Usage information](#usage-information)
+- [Contributing guidelines](#contributing-guidelines)
+- [Test instructions](#test-instructions)
+- [License](#license)
+- [Questions](#questions)
+
 ## Installation instructions
-sdffsdfsd
+test installation
+
 ## Usage information
-sdfsdfsdf
+test usage
+
 ## Contributing guidelines
-sdffsd
+test guidelines
+
 ## Test instructions
-sdfsdf
+test instructions
+
 ## License
-This project is licensed under the MIT License. For more information about the license, see the [MIT License](https://opensource.org/licenses/MIT).
+This project is licensed under the GNU General Public License v3.0. For more information about the license, see the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
 ## Questions
-- [Repository](https://github.com/sdfsdf/test-name)
-- [Website](https://sdfsdf.github.io/test-name/)
-- [Email](mailto:sdffsd)
+- [Github user seantamturk](https://github.com/seantamturk)
+- [Repository](https://github.com/seantamturk/test-name)
+- [Website](https://seantamturk.github.io/test-name/)
+- [Contact me through email here](mailto:test@gmail.com)
